@@ -1,0 +1,156 @@
+/* Resets */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+}
+
+/* utilities  */
+
+.card-with-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blue-text {
+  color: #3595f6;
+  font-weight: 600;
+}
+
+/* main */
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 780px) {
+  .section-container {
+    margin: 0;
+  }
+}
+
+/* sections */
+
+.section-container__smartphone {
+  display: none;
+}
+
+@media screen and (min-width: 780px) {
+  .section-container__smartphone {
+    display: block;
+  }
+}
+
+/* form section */
+
+.section-container__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 780px) {
+  .section-container__form {
+    width: 21.875rem;
+  }
+}
+
+.section-container__form__top-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  flex-grow: 1;
+}
+
+.section-container__form__top-box--logo {
+  width: 10.9375rem;
+}
+
+.section-container__form__top-box--avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.section-container__form__top-box-button {
+  border: none;
+  background-color: #3595f6;
+  color: white;
+  padding: 0.5rem 0.3rem;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.section-container__form__top-box-remove-acount-link,
+section-container__form__top-box-remove-acount-link:active,
+section-container__form__top-box-remove-acount-link:visited {
+  color: #3595f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* signup box */
+
+.section-container__form__signup-box {
+  padding: 1rem 0;
+}
+
+.section-container__form__signup-box p {
+  text-align: center;
+}
+
+.section-container__form__signup-box a,
+section-container__form__signup-box a:active,
+section-container__form__signup-box a:visited {
+  text-decoration: none;
+  color: #3595f6;
+}
+
+/* get the app section */
+
+.section-container__form__get-the-app p {
+  text-align: center;
+}
+
+.section-container__form__get-the-app {
+}
+
+/* bottom box section */
+
+.section-container__form__bottom-box {
+  display: flex;
+
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.section-container__form__bottom-box img {
+  width: 8.5rem;
+  height: 2.5rem;
+}
